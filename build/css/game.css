@@ -1,0 +1,65 @@
+html, body {
+		background-color: #F38C4F;
+		overflow: hidden;
+	}
+#name {
+	font-size: 4em;
+	font-family: "Arial", Arial, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 40px;
+}
+#game_over {
+	font: 1.5em Arial;
+	font-weight: bold;
+	position: relative;
+	bottom: 300px;
+	text-align: center;
+}
+.slash {
+	font: 1.5em Arial;
+}
+.button {
+	display: block;
+	text-align: center;
+}
+.second_row {
+	position: relative;
+	left: 10px;
+    top: -5px;
+}
+canvas {
+	margin-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+} 
+button {
+	border: none;    	
+	background-color: Transparent;
+	font: 1.5em Arial;
+	outline: none;
+}
+img {
+	position: absolute; 
+	float: right; 
+	margin-left: 61%;
+	margin-top: 400px;
+	width: 220px
+}
+button:active {
+	color: black;
+}
+button:hover {
+	font-weight: bold;
+}
+button:disabled {
+	color: black;
+	font-weight: normal;
+}
+img:hover {
+	left: 10px;
+	opacity: 0.9;
+}

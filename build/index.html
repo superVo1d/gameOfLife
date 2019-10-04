@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Game Of Life</title>
+	<link rel="stylesheet" type="text/css" href="css/game.css">
+</head>
+<body>
+
+	<a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" 
+	target="_blank"><img src="img/president.png"></a>
+
+	<div id="name">THE GAME OF &ensp; &ensp; LIFE</div>
+
+	<canvas id="gameCanvas" width="400px" height="400px"></canvas><br>
+
+	<span class="button first_row">
+		<button type="button" id="nxt_stp" onclick="game()">NEXT STEP</button>
+		<span class="slash">/</span>
+		<button type="button" id="re" onclick="clearGameField()">REFRESH</button>
+	</span>
+
+	<span class="button second_row">
+	    <button type="button" id="start_btn" onclick="playWithTimeInterval()">START</button>
+	    <span class="slash">/</span>
+	    <button type="button" id="pause" onclick="pauseGame()">PAUSE</button>
+	</span>
+
+	<div id="game_over"></div>
+
+	<script src="js/game.js"></script>
+	
+</body>
+</html>
