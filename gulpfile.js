@@ -37,32 +37,32 @@ var config = {
 };
 
 gulp.task('html:build', function () {
-    gulp.src(path.src.html) //Выберем файлы по нужному пути
-        .pipe(gulp.dest(path.build.html)) //Выплюнем их в папку build
-        .pipe(reload({stream: true})); //И перезагрузим наш сервер для обновлений
+    gulp.src(path.src.html)
+        .pipe(gulp.dest(path.build.html))
+        .pipe(reload({stream: true}));
 })
 
 gulp.task('js:build', function () {
-    gulp.src(path.src.js) //Выберем файлы по нужному пути
-        .pipe(gulp.dest(path.build.js)) //Выплюнем их в папку build
-        .pipe(reload({stream: true})); //И перезагрузим наш сервер для обновлений
+    gulp.src(path.src.js)
+        .pipe(gulp.dest(path.build.js))
+        .pipe(reload({stream: true}));
 })
 
 gulp.task('css:build', function () {
-    gulp.src(path.src.css) //Выберем файлы по нужному пути
-        .pipe(gulp.dest(path.build.css)) //Выплюнем их в папку build
-        .pipe(reload({stream: true})); //И перезагрузим наш сервер для обновлений
+    gulp.src(path.src.css)
+        .pipe(gulp.dest(path.build.css))
+        .pipe(reload({stream: true}));
 })
 
 gulp.task('image:build', function () {
-    gulp.src(path.src.img) //Выберем наши картинки
-        .pipe(imagemin({ //Сожмем их
+    gulp.src(path.src.img)
+        .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()],
             interlaced: true
         }))
-        .pipe(gulp.dest(path.build.img)) //И бросим в build
+        .pipe(gulp.dest(path.build.img))
         .pipe(reload({stream: true}));
 });
 
